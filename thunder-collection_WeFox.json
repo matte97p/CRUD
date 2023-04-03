@@ -1,0 +1,162 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "WeFox",
+    "dateExported": "2023-04-03T21:26:33.010Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3a638e57-6013-4321-ba38-bc9c6bd7827e",
+            "colId": "5fc45893-816e-443a-a609-7403eb5d50e7",
+            "containerId": "",
+            "name": "Create",
+            "url": "https://wefox.test/api/product/store",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-04-03T21:17:50.313Z",
+            "modified": "2023-04-03T21:20:00.691Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Prova\",\n  \"description\": \"Prova\",\n  \"price\": 10,\n  \"sell_percentage\": 3,\n  \"sku\": \"ABC123\",\n  \"image\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLaravel&psig=AOvVaw0_7K2zHzrLf-DNe5d5Xf6L&ust=1680643134315000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDw7tnRjv4CFQAAAAAdAAAAABAE\",\n  \"availability\": 10\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "98ca9b8e-3def-45f5-b75f-d900b3cda8af",
+            "colId": "5fc45893-816e-443a-a609-7403eb5d50e7",
+            "containerId": "",
+            "name": "Read",
+            "url": "https://wefox.test/api/product/index",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-03T21:17:42.093Z",
+            "modified": "2023-04-03T21:26:23.357Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"search\": \"\",\n  \"sku\": \"ABC123\",\n  \"available\": true,\n  \"per_page\": 10,\n  \"page\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ccfbcd2d-1315-4f44-a484-d31f18a1f8f9",
+            "colId": "5fc45893-816e-443a-a609-7403eb5d50e7",
+            "containerId": "",
+            "name": "Update",
+            "url": "https://wefox.test/api/product/update/{product_id}",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-03T21:23:28.231Z",
+            "modified": "2023-04-03T21:25:14.781Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "product_id",
+                    "value": "400",
+                    "isPath": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Prova2\",\n  \"description\": \"Prova\",\n  \"price\": 10,\n  \"sell_percentage\": 3,\n  \"sku\": \"ABC123\",\n  \"image\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLaravel&psig=AOvVaw0_7K2zHzrLf-DNe5d5Xf6L&ust=1680643134315000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDw7tnRjv4CFQAAAAAdAAAAABAE\",\n  \"availability\": 10\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4f50bb1d-fc75-4fb1-94d3-77db70984ce5",
+            "colId": "5fc45893-816e-443a-a609-7403eb5d50e7",
+            "containerId": "",
+            "name": "Delete",
+            "url": "https://wefox.test/api/product/delete/{product_id}",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-04-03T21:25:26.120Z",
+            "modified": "2023-04-03T21:25:51.988Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "product_id",
+                    "value": "399",
+                    "isPath": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/json",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
