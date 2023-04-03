@@ -13,3 +13,9 @@ createdb wefox;<br>
 CREATE USER mario with PASSWORD 'rossi';<br>
 GRANT ALL PRIVILEGES ON DATABASE wefox to mario;<br>
 ![image (1)](https://user-images.githubusercontent.com/81815192/229632654-d6fe2b47-bf2a-4b16-89d0-e48b5a48ce94.png)
+
+# Thunder Collection
+https://github.com/matte97p/WeFox/blob/5f2d1fa0fd21bb78daa8494d91a73b80d8ef4fa2/thunder-collection_WeFox.json
+
+# DB Dump
+https://github.com/matte97p/WeFox/blob/5f2d1fa0fd21bb78daa8494d91a73b80d8ef4fa2/dump-wefox-202304032335
