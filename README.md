@@ -98,6 +98,7 @@
     GRANT ALL PRIVILEGES ON DATABASE wefox to mario;
     
     php artisan migrate
+    php artisan vendor:publish --tag=passport-migrations
     php artisan vendor:publish --tag=telescope-migrations
     ```
     
