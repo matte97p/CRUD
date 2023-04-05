@@ -11,12 +11,12 @@ valet links<br>
 
 # DB pg
 sudo -u postgres psql<br>
-createdb wefox;<br>
+CREATE DATABASE wefox;<br>
 CREATE USER mario with PASSWORD 'rossi';<br>
 GRANT ALL PRIVILEGES ON DATABASE wefox to mario;<br>
 
-# Thunder Collection
-https://github.com/matte97p/WeFox/blob/5f2d1fa0fd21bb78daa8494d91a73b80d8ef4fa2/thunder-collection_WeFox.json
-
 # DB Dump
 https://github.com/matte97p/WeFox/blob/5f2d1fa0fd21bb78daa8494d91a73b80d8ef4fa2/dump-wefox-202304032335
+
+# Thunder Collection
+https://github.com/matte97p/WeFox/blob/5f2d1fa0fd21bb78daa8494d91a73b80d8ef4fa2/thunder-collection_WeFox.json
