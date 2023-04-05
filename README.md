@@ -63,6 +63,16 @@
     cd ~/Sites
     valet park
     ```
+-   optional [Laravel Telescope][laravel-telescope-download]
+    ```sh
+    composer require laravel/telescope
+    php artisan telescope:install
+    ```
+-   optional [Laravel Horizon][laravel-horizon-download]
+    ```sh
+    composer require laravel/horizon
+    php artisan horizon:install
+    ```
 -   [PostgreSQL][postgresql-download]
 
 ### Installation
@@ -83,13 +93,19 @@
     CREATE USER mario with PASSWORD 'rossi';
     GRANT ALL PRIVILEGES ON DATABASE wefox to mario;
     ```
-4. Create valet path
+    
+4. Create and start the web server for https://mypath.test/
     ```sh
-    valet link wefox
-    valet secure wefox
-    valet links
+    valet link mypath
+    valet secure mypath
     ```
 ![image](https://user-images.githubusercontent.com/81815192/230135024-a4b21d89-2ec2-4a77-8308-4c755420c6aa.png)
+
+4. Start the web server for http://localhost:8000/.
+
+    ```
+    php artisan serve
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,6 +136,8 @@ This section of the standard comprises what should be considered the standard co
 [composer-download]: https://getcomposer.org/download/
 [laravel10-download]: https://laravel.com/docs/10.x/installation
 [laravel-valet-download]: https://laravel.com/docs/10.x/valet
+[laravel-telescope-download]: https://laravel.com/docs/10.x/telescope
+[laravel-horizon-download]: https://laravel.com/docs/10.x/horizon
 [postgresql-download]: https://www.postgresql.org/download/
 [php_psr12]: https://www.php-fig.org/psr/psr-12/
 [thunder]: https://github.com/matte97p/WeFox/blob/5f2d1fa0fd21bb78daa8494d91a73b80d8ef4fa2/thunder-collection_WeFox.json
