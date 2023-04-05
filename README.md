@@ -87,11 +87,13 @@
     ```
 3. Create DB and upload [DB Backup][DB_DUMP]
     ```sh
-    EG
     sudo -u postgres psql
     CREATE DATABASE wefox;
     CREATE USER mario with PASSWORD 'rossi';
     GRANT ALL PRIVILEGES ON DATABASE wefox to mario;
+    
+    php artisan migrate
+    php artisan vendor:publish --tag=telescope-migrations
     ```
     
 4. Create and start the web server for https://mypath.test/
