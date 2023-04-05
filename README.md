@@ -33,8 +33,8 @@
 
 ### Built With
 
-<!---   [![Angular][angular.io]][angular-url]-->
--   [![Laravel][laravel.com]][laravel-url]
+<!---   [![Angular][angular.io]][angular-docs]-->
+-   [![Laravel][laravel.com]][laravel-docs]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -44,6 +44,7 @@
 
 ### Prerequisites
 
+-   [PostgreSQL][postgresql-download]
 -   [php8.2][php8.2-download]
 -   [composer][composer-download]
     ```sh
@@ -56,24 +57,28 @@
     ```sh
     composer global require laravel/installer
     ```
--   [Laravel Valet][laravel-valet-download]
+-   [Laravel Passport][laravel-passport-docs] -> provides a full OAuth2 server implementation
+    ```sh
+    composer require laravel/passport
+    php artisan passport:install
+    ```
+-   optional [Laravel Valet][laravel-valet-docs] -> blazing fast Laravel development environment that uses roughly 7 MB of RAM
     ```sh
     composer global require laravel/valet
     valet install
     cd ~/Sites
     valet park
     ```
--   optional [Laravel Telescope][laravel-telescope-download]
+-   optional [Laravel Telescope][laravel-telescope-docs] -> Telescope provides insight into the requests coming into your application and more.
     ```sh
     composer require laravel/telescope
     php artisan telescope:install
     ```
--   optional [Laravel Horizon][laravel-horizon-download]
+-   optional [Laravel Horizon][laravel-horizon-docs] -> dashboard Redis queues
     ```sh
     composer require laravel/horizon
     php artisan horizon:install
     ```
--   [PostgreSQL][postgresql-download]
 
 ### Installation
 
@@ -123,24 +128,32 @@
 
 ## Coding Guidelines
 
-[PHP PSR 12 DOCS][php_psr12]
+[PSR 12 DOCS][psr12-docs]
 This section of the standard comprises what should be considered the standard coding elements that are required to ensure a high level of technical interoperability between shared PHP code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
+<!-- LANGUAGES -->
+[angular-docs]: https://angular.io/
 [angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[angular-url]: https://angular.io/
 [laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[laravel-url]: https://laravel.com
+[laravel-docs]: https://laravel.com
+[psr12-docs]: https://www.php-fig.org/psr/psr-12/
+
+<!-- DOWNLOAD -->
+[postgresql-download]: https://www.postgresql.org/download/
 [php8.2-download]: https://www.php.net/downloads.php
 [composer-download]: https://getcomposer.org/download/
 [laravel10-download]: https://laravel.com/docs/10.x/installation
-[laravel-valet-download]: https://laravel.com/docs/10.x/valet
-[laravel-telescope-download]: https://laravel.com/docs/10.x/telescope
-[laravel-horizon-download]: https://laravel.com/docs/10.x/horizon
-[postgresql-download]: https://www.postgresql.org/download/
-[php_psr12]: https://www.php-fig.org/psr/psr-12/
+
+<!-- PACKAGES -->
+[laravel-passport-docs]: https://laravel.com/docs/10.x/passport
+[laravel-valet-docs]: https://laravel.com/docs/10.x/valet
+[laravel-telescope-docs]: https://laravel.com/docs/10.x/telescope
+[laravel-horizon-docs]: https://laravel.com/docs/10.x/horizon
+
+<!-- UTILITIES -->
 [thunder]: https://github.com/matte97p/WeFox/blob/5f2d1fa0fd21bb78daa8494d91a73b80d8ef4fa2/thunder-collection_WeFox.json
 [DB_DUMP]: https://github.com/matte97p/WeFox/blob/5f2d1fa0fd21bb78daa8494d91a73b80d8ef4fa2/dump-wefox-202304032335
