@@ -24,8 +24,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#thunder-collenction">Thunder Collenction</a></li>
     <li><a href="#coding-guidelines">Coding Guidelines</a></li>
+    <li><a href="#thunder-collenction">Thunder Collenction</a></li>
   </ol>
 </details>
 
@@ -116,20 +116,20 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Thunder Collenction -->
-
-## Thunder Collenction
-
-[Thunder API Collection][thunder]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- Coding Guide Line -->
 
 ## Coding Guidelines
 
 [PSR 12 DOCS][psr12-docs]
 This section of the standard comprises what should be considered the standard coding elements that are required to ensure a high level of technical interoperability between shared PHP code.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Thunder Collenction -->
+
+## Thunder Collenction
+
+[Thunder API Collection][thunder]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
